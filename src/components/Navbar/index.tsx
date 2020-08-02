@@ -23,9 +23,12 @@ const Navbar = () => {
         <div className="flex">
           <div className="icon">
             <div className="relative">
-              <div className="badge">
-                {notifications_count}
-              </div>
+              {
+                notifications_count ?
+                  <div className="badge">
+                    {notifications_count}
+                  </div> : null
+              }
               <MailIcon />
             </div>
 

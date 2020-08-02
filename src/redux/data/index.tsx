@@ -1,5 +1,5 @@
 import { createReducer, createAction } from '@reduxjs/toolkit'
-import data from '../../test.json'
+import data from '../../data.json'
 
 export const setView = createAction('data/SETVIEW', (view:string) => {
   return {

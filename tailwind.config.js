@@ -1,5 +1,9 @@
 module.exports = {
-  purge: [],
+  purge: {
+    content: [
+      "./src/**/*.tsx"
+    ]
+  },
   theme: {
     fontFamily: {
       sans: [
@@ -16,7 +20,7 @@ module.exports = {
       ]
     },
     fontSize: {
-      base: '14px'  
+      base: '14px'
     },
     extend: {
       opacity: {
@@ -39,7 +43,7 @@ module.exports = {
         '13': '13px',
         '16': '16px',
         '18': '18px',
-        '30': '30px'  
+        '30': '30px'
       },
       lineHeight: {
         'px-22': '22px',

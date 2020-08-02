@@ -1070,6 +1070,8 @@ video {
   font-size: 14px;
 }
 
+/* Start purging... */
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
@@ -19422,6 +19424,8 @@ video {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
+
+/* Stop purging. */
 
 @font-face {
   font-family: "ProximaNova";

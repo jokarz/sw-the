@@ -24,10 +24,18 @@ const Activity = () => {
       </div>
         </div>
         <div className="pt-8 pb-6 flex flex-col">
-          {
-            activities.map((activity: ActivitiesState, index) => (
-              <ActivityCard key={index} {...activity} createdAt={activity.created_at} />
-            ))
+          {activities.length ?
+            <>
+              {
+                activities.map((activity: ActivitiesState, index) => (
+                  <ActivityCard key={index} {...activity} createdAt={activity.created_at} />
+                ))
+              }
+            </>
+            :
+            <div className="text-center font-semibold text-18 text-gray-500">
+              No activity yet
+            </div>
           }
         </div>
       </div>
