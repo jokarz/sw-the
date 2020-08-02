@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+
+.navbar {
+  @apply flex border-b-2 border-primary-gray-lightest bg-white;
+  height: 80px;
+}
+
+.navbar .sub {
+  @apply flex h-full justify-center items-center font-semibold px-8 text-18 text-primary-gray-lighter border-r-2 border-primary-gray-lightest;
+}
+
+.navbar .main {
+  @apply flex h-full w-full justify-between px-8;
+}
+
+.navbar .main .icon {
+  @apply flex justify-center items-center mr-2;
+}
+
+.navbar .main .icon .badge {
+  @apply rounded-full absolute bg-primary-selection flex items-center justify-center text-white font-semibold border-2 border-white;
+  height: 20px;
+  width: 20px;
+  font-size: 11px;
+  top: -10px;
+  right: -9px;
+}
+
+.navbar .main .user {
+  @apply flex items-center px-4 text-primary-gray-lighter font-semibold;
+}
+
+.navbar .main .user img {
+  @apply rounded-full border mr-2;
+  width: 36px;
+  height: 36px;
+}
+
+.navbar .main .title {
+  @apply flex justify-center items-center text-18 mr-8;
+}
+
+.sidenav {
+  @apply flex flex-col justify-between h-full bg-primary-dark;
+  width: 80px;
+  min-height: 100vh;
+}
+
+.sidenav-icon {
+  @apply flex justify-center items-center cursor-pointer opacity-30;
+  height: 80px;
+  width: 80px;
+  color: #e2e8f0;
+}
+
+.sidenav-icon:hover,
+.sidenav-icon.active {
+  @apply bg-primary-selection opacity-100;
+}
+
+.header {
+  @apply flex flex-col bg-white shadow-sm;
+}
+
+.header .main {
+  @apply flex justify-between w-full p-8;
+}
+
+.header .main .icon {
+  @apply text-primary-gray-lighter mr-2 opacity-75;
+}
+
+.header .main .title {
+  @apply text-30 font-semibold;
+}
+
+.header .main .btn {
+  @apply flex mx-4 px-3 py-2 bg-primary-success items-center rounded cursor-pointer;
+}
+
+.header .main .btn:hover {
+  @apply bg-primary-success-darker;
+}
+
+.header .main .btn .text {
+  @apply text-white text-base;
+}
+
+.header .sub {
+  @apply flex justify-between w-full px-8 shadow-lg;
+}
+
+.header .sub .listing {
+  @apply cursor-pointer text-18 font-semibold px-4 py-2 mr-4 border-b-4 border-transparent select-none leading-px-22;
+}
+
+.header .sub .listing:hover,
+.header .sub .listing.active {
+  @apply border-primary-selection text-primary-selection;
+}
+
+.header .sub .search-input {
+  @apply appearance-none px-4 outline-none mb-1 font-semibold text-16;
+}
+.header .sub .search-input::placeholder {
+  @apply text-gray-500;
+}
+
+.header .sub .search-input:focus::placeholder {
+  @apply text-black;
+}
+
+.content {
+  @apply shadow-lg bg-white flex flex-col;
+}
+
+.content .title {
+  @apply font-semibold text-18;
+}
+
+.team-item {
+  @apply flex flex-col border-2 rounded w-full;
+}
+
+.team-item .main {
+  @apply flex flex-col p-3 w-full border-b-2 flex-grow;
+}
+
+.team-item .main img {
+  @apply flex-none rounded mr-3;
+  height: 36px;
+  width: 36px;
+}
+
+.team-item .footer {
+  @apply flex px-3 py-5 flex-none text-13 leading-px-16;
+  color: #b3b3b3;
+}
+
+.team-item .footer .icon {
+  height: 16px;
+  width: 17px;
+}
+
+.activity-item {
+  @apply flex mb-4 px-8;
+}
+
+.activity-item img {
+  @apply rounded-full;
+  height: 36px;
+  width: 36px;
+}
+
+.activity-item .activity-msg {
+  @apply text-gray-700 leading-px-19 text-base;
+}
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "ProximaNova";
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"),
+    url("/style/font/ProximaNova-Semibold.woff2") format("woff2"),
+    url("/style/font/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"),
+    url("/style/font/ProximaNova-Regular.woff2") format("woff2"),
+    url("/style/font/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
