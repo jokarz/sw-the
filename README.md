@@ -9,13 +9,13 @@
 
 # Additional Info
 
-* This is a React + Typescript project
+* This is a Create React App with Typescript project
 * The teams tabs (All, Favorite, Archive) are working
 * Each of the teams can be added/removed from the favorite tab by starring/unstarring
 * The json data given is stored at ```src/data.json```, editing this will edit the results being populated
 * Created with desktop view and modern browsers in mind
 * Unique cases are taken into consideration
     * 0 notification count (in which a badge won't be shown) 
-    * No teams being in Archive/Favorite tab 
+    * Empty teams being in different tabs (All, Favorite, Archive)
     * Empty actitives 
 

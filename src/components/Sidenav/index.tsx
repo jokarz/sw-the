@@ -12,28 +12,28 @@ const Sidenav = () => {
   return (
     <div className="sidenav">
       <div className="flex flex-col">
-        <div className="sidenav-icon opacity-100">
+        <div className="sidenav-icon opacity-100" title="SalesWhale">
           <SalesWhaleIcon />
         </div>
-        <div className="sidenav-icon" >
+        <div className="sidenav-icon"  title="Campaigns">
           <div style={{ height: '26px' }}>
             <ChatIcon />
           </div>
         </div>
-        <div className="sidenav-icon active">
+        <div className="sidenav-icon active" title="Teams">
           <TeamsIcon />
         </div>
-        <div className="sidenav-icon">
+        <div className="sidenav-icon" title="Leads">
           <div style={{ height: '28px' }}>
             <ContactIcon />
           </div>
         </div>
-        <div className="sidenav-icon">
+        <div className="sidenav-icon" title="Reports">
           <ReportIcon />
         </div>
       </div>
       <div>
-        <div className="sidenav-icon">
+        <div className="sidenav-icon" title="Help">
           <HelpIcon />
         </div>
       </div>

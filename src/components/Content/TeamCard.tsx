@@ -37,7 +37,7 @@ const TeamCard: FC<TeamCardProps> = ({ id = 0, name = '', image = '', createdAt 
                 </div> : null
             }
           </div>
-          <div className="flex-none justify-center cursor-pointer select-none"
+          <div className="star"
             onClick={() => dispatch(setFavorite(id, !isFavorited))}
           >
             {isFavorited ?

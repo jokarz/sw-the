@@ -76,7 +76,7 @@
 }
 
 .header .main .btn {
-  @apply flex mx-4 px-3 py-2 bg-primary-success items-center rounded cursor-pointer;
+  @apply flex mx-4 px-3 py-2 bg-primary-success items-center rounded cursor-pointer select-none;
 }
 
 .header .main .btn:hover {
@@ -131,6 +131,10 @@
   @apply flex-none rounded mr-3;
   height: 36px;
   width: 36px;
+}
+
+.team-item .main .star{
+  @apply flex-none justify-center cursor-pointer select-none;
 }
 
 .team-item .footer {
