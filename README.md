@@ -1,3 +1,4 @@
+For [this](https://www.notion.so/Junior-Frontend-Engineer-Takehome-458c89d75b29483393a1fcc3349417e2) task
 ## Live [here](https://sw-the.vercel.app/)
 
 # Getting Started
