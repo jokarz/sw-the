@@ -23,7 +23,7 @@
   "scripts": {
     "build:tw": "tailwindcss build src/style/base.scss -o src/index.css",
     "prestart": "npm run build:tw",
-    "prebuild": "npm run build:tw",
+    "prebuild": "NODE_ENV=production npm run build:tw",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
